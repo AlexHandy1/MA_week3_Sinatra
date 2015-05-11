@@ -1,0 +1,14 @@
+<div>
+    <%if @sheep_answer %>
+        You think there are <%= @sheep_answer %>
+    <%else%>
+      <form action = "/hi" >
+        My name is <%= @name %>
+        Can you tell how many sheep there are?
+        Is it <%= @sheep%>
+      <input type = "text" name = "sheep">
+      <input type = "submit">
+    <%end%>
+    </form>
+  <img src='https://download.unsplash.com/photo-1423766111988-c47a5ff6ed06'>
+</div>

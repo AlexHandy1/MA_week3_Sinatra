@@ -1,21 +1,17 @@
 require 'sinatra'
 
 get '/' do
-  @name = %w(Amigo Oscar Viking).sample
   erb :index
 end
 
-get '/hello' do
-  @name = %w(Amigo Oscar Viking).sample
-  @visitor = params[:name]
-  erb :index
+get '/hi' do
+  @name = "Alex"
+  #@visitor = params[:name]
+  @sheep = "10?"
+  @sheep_answer = params[:sheep]
+  erb :new_view
 end
 
-get '/secret' do
-  'This is the secret page'
-end
-
-get '/test' do
-  erb :test
-end
-
+# post '/hi' do
+#   Is this different?
+# end
